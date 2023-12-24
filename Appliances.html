@@ -1,0 +1,410 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleSheet.css">
+    <title>Silver Company</title>
+</head>
+<body>
+    <h2>الأجهزة</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>المنتج</th>
+                <th>التفاصيل</th>
+                <th>السعر</th>
+                <th>الصورة</th>
+                <th>الإضافة إلى السلة</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Product 1 -->
+            <tr>
+                <td>ثلاجة Samsung بـ 800 لتر</td>
+                <td>
+                    <p>نوع: ثلاجة ثنائية الأبواب</p>
+                    <p>الحجم: 800 لتر</p>
+                    <p>تقنية SpaceMax™</p>
+                    <p>مدى طويل بتوفير طاقة يصل إلى 50%</p>
+                    <p>محول رقمي</p>
+                    <p>تبريد شامل</p>
+                </td>
+                <td>6,500,000 ليرة سورية</td>
+                <td><img src="Samsung refrigerator.jpg" alt="صورة المكواة"></td>
+                <td><button class="add-to-cart-btn" onclick="addToCart(1, 'ثلاجة Samsung بـ 800 لتر', 6500000, 1)">إضافة إلى السلة</button></td>
+
+            </tr>
+
+            <!-- Product 2 -->
+            <tr>
+                <td>مكواة panasonic</td>
+                <td>
+                    <p>نوع: مكواة كهربائية</p>
+                    <p>سهلة الاستخدام</p>
+                    <p>تسخين سريع</p>
+                    <p>مقبض مريح</p>
+                </td>
+                <td>500,000 ليرة سورية</td>
+                <td><img src="iron panasonic.jpg" alt="صورة المكواة"></td>
+                <td><button class="add-to-cart-btn" onclick="addToCart(2, 'مكواة Samsung', 500000, 1)">إضافة إلى السلة</button></td>
+            </tr>
+
+            <!-- Product 3 -->
+            <tr>
+                <td>غسالة LG أوتوماتيكية</td>
+                <td>
+                    <p>نوع: غسالة أوتوماتيكية</p>
+                    <p>سعة الحمولة: 10 كيلوغرام</p>
+                    <p>تقنية TurboWash™</p>
+                    <p>عدد برامج الغسيل: 15</p>
+                </td>
+                <td>1,200,000 ليرة سورية</td>
+                <td><img src="LG washing machine.jpg" alt="صورة الغسالة"></td>
+                <td><button class="add-to-cart-btn" onclick="addToCart(3, 'غسالة LG أوتوماتيكية', 1200000, 1)">إضافة إلى السلة</button></td>
+            </tr>
+
+            <!-- Product 4 -->
+            <tr>
+                <td>مكيف هواء TOSHIBA</td>
+                <td>
+                    <p>نوع: مكيف هواء معتمد</p>
+                    <p>قدرة التبريد: 18,000 وحدة حرارية</p>
+                    <p>تقنية Inverter</p>
+                    <p>وظيفة تنقية الهواء</p>
+                </td>
+                <td>2,800,000 ليرة سورية</td>
+                <td><img src="Toshiba air conditioner.jpg" alt="صورة مكيف الهواء"></td>
+                <td><button class="add-to-cart-btn" onclick="addToCart(4, 'مكيف هواء TOSHIBA', 2800000, 1)">إضافة إلى السلة</button></td>
+            </tr>
+
+            <!-- Product 5 -->
+            <tr>
+                <td>ميكروويف LG</td>
+                <td>
+                    <p>نوع: ميكروويف</p>
+                    <p>سعة: 20 لتر</p>
+                    <p>تقنية EasyClean</p>
+                    <p>عدد البرامج: 10</p>
+                </td>
+                <td>800,000 ليرة سورية</td>
+                <td><img src="LG microwave.jpg" alt="صورة الميكروويف"></td>
+                <td><button class="add-to-cart-btn" onclick="addToCart(5, 'ميكروويف LG', 800000, 1)">إضافة إلى السلة</button></td>
+            </tr>
+
+            <!-- Product 6 -->
+            <tr>
+                <td>تلفزيون Samsung 55 بوصة</td>
+                <td>
+                    <p>نوع: تلفزيون ذكي</p>
+                    <p>حجم الشاشة: 55 بوصة</p>
+                    <p>دقة العرض: 4K Ultra HD</p>
+                    <p>تقنية الصورة: QLED</p>
+                </td>
+                <td>3,500,000 ليرة سورية</td>
+                <td><img src="samsung tv.jpg" alt="صورة التلفزيون"></td>
+                <td><button class="add-to-cart-btn" onclick="addToCart(6, 'تلفزيون Samsung 55 بوصة', 3500000, 1)">إضافة إلى السلة</button></td>
+            </tr>
+
+            <!-- Product 7 -->
+            <tr>
+                <td>مكنسة كهربائية TOSHIBA</td>
+                <td>
+                    <p>نوع: مكنسة كهربائية</p>
+                    <p>قوة الشفط: 1600 واط</p>
+                    <p>فلتر HEPA قابل للغسل</p>
+                    <p>سلك طويل لسهولة الاستخدام</p>
+                </td>
+                <td>1,000,000 ليرة سورية</td>
+                <td><img src="Toshiba vacuum cleaner.jpg" alt="صورة المكنسة الكهربائية"></td>
+                <td><button class="add-to-cart-btn" onclick="addToCart(7, 'مكنسة كهربائية TOSHIBA', 1000000, 1)">إضافة إلى السلة</button></td>
+            </tr>
+
+            <!-- Product 8 -->
+            <tr>
+                <td>خلاط LG</td>
+                <td>
+                    <p>نوع: خلاط كهربائي</p>
+                    <p>سعة الوعاء: 1.5 لتر</p>
+                    <p>شفرات قوية من الفولاذ المقاوم للصدأ</p>
+                    <p>عدد السرعات: 3 + وضع النبض</p>
+                </td>
+                <td>600,000 ليرة سورية</td>
+                <td><img src="lg mixer.jpg" alt="صورة الخلاط"></td>
+                <td><button class="add-to-cart-btn" onclick="addToCart(8, 'خلاط LG', 600000, 1)">إضافة إلى السلة</button></td>
+            </tr>
+
+            <!-- Product 9 -->
+            <tr>
+                <td>لابتوب TOSHIBA</td>
+                <td>
+                    <p>نوع: لابتوب</p>
+                    <p>المعالج: Intel Core i5</p>
+                    <p>الذاكرة: 8 جيجابايت RAM</p>
+                    <p>سعة التخزين: 512 جيجابايت SSD</p>
+                </td>
+                <td>4,000,000 ليرة سورية</td>
+                <td><img src="Toshiba laptop.jpg" alt="صورة اللابتوب"></td>
+                <td><button class="add-to-cart-btn" onclick="addToCart(9, 'لابتوب TOSHIBA', 4000000, 1)">إضافة إلى السلة</button></td>
+            </tr>
+
+            <!-- Product 10 -->
+            <tr>
+                <td>كاميرا Canon رقمية</td>
+                <td>
+                    <p>نوع: كاميرا رقمية</p>
+                    <p>الدقة: 20 ميجابيكسل</p>
+                    <p>تقنية التثبيت البصري</p>
+                    <p>شاشة LCD قابلة للدوران</p>
+                </td>
+                <td>1,500,000 ليرة سورية</td>
+                <td><img src="Canon camera.jpg" alt="صورة الكاميرا"></td>
+                <td><button class="add-to-cart-btn" onclick="addToCart(10, 'كاميرا Canon رقمية', 1500000, 1)">إضافة إلى السلة</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="shopping-basket">
+        <h2>سلة التسوق</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>المنتج</th>
+                    <th>السعر (ل.س)</th>
+                    <th>الكمية</th>
+                    <th>الإجمالي (ل.س)</th>
+                </tr>
+            </thead>
+            <tbody id="basket-items"></tbody>
+        </table>
+        <p id="tax-row">الضريبة (5%): <span id="tax-amount">0</span> ل.س</p>
+        <p id="final-set-row">المجموع النهائي: <span id="final-set-amount">0</span> ل.س</p>
+
+        <!-- Cancel and Continue buttons -->
+        <div id="cart-buttons">
+            <button onclick="cancelCart()">إلغاء</button>
+            <button onclick="showCheckoutForm()">متابعة</button>
+        </div>
+
+        <div id="checkout-form" style="display: none; border: 2px solid #ccc; padding: 10px; margin-top: 20px;">
+            <h2>استمارة الشراء</h2>
+            <form id="buy-form">
+                <label for="fullName">الاسم الكامل:</label>
+                <input type="text" id="fullName" name="fullName" pattern="[أ-يa-zA-Z\s]+" required>
+                <br>
+
+                <label for="nationalNumber">الرقم الوطني:</label>
+                <input type="text" id="nationalNumber" name="nationalNumber" pattern="\d{11}" required>
+                <br>
+
+                <label for="dateOfBirth">تاريخ الميلاد:</label>
+                <input type="text" id="dateOfBirth" name="dateOfBirth" pattern="\d{2}-\d{2}-\d{4}" placeholder="dd-mm-yyyy" required>
+                <br>
+
+                <label for="mobileNumber">رقم الهاتف المحمول:</label>
+                <input type="text" id="mobileNumber" name="mobileNumber" pattern="(09\d{8}|09\d{9})" placeholder="09xxxxxxxxx" required>
+                <br>
+
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+
+                <!-- Captcha Code Entry -->
+                <label for="captcha">رمز Captcha:</label>
+                <input type="text" id="captcha" name="captcha" required>
+                <img src="generateCaptchaImage.php" alt="Captcha Image">
+                <br>
+
+                <!-- Buy button within the form -->
+                <button type="button" onclick="buy()">شراء</button>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Include your shared JavaScript file (e.g., script.js) -->
+    <script src="script.js"></script>
+    <script>
+    function addToCart(productId, productName, productPrice, quantity) {
+        // Add your logic to handle adding the product to the cart
+
+        // Calculate the total for the current product
+        var totalForProduct = productPrice * quantity;
+
+        // Get the basket items list
+        var basketItemsList = document.getElementById('basket-items');
+
+        // Check if the product is already in the cart
+        var existingRow = null;
+        for (var i = 0; i < basketItemsList.rows.length; i++) {
+            if (basketItemsList.rows[i].cells[0].textContent === productName) {
+                existingRow = basketItemsList.rows[i];
+                break;
+            }
+        }
+
+        // If the product is already in the cart, update the quantity and total
+        if (existingRow) {
+            var existingQuantity = parseInt(existingRow.cells[2].textContent);
+            var newQuantity = existingQuantity + quantity;
+            existingRow.cells[2].textContent = newQuantity;
+            existingRow.cells[3].textContent = (productPrice * newQuantity).toFixed(2);
+        } else {
+            // Create a new table row for the added product
+            var newRow = basketItemsList.insertRow();
+
+            // Insert cells for product details
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
+            var cell3 = newRow.insertCell(2);
+            var cell4 = newRow.insertCell(3);
+
+            // Set the content of the cells
+            cell1.textContent = productName;
+            cell2.textContent = productPrice.toFixed(2);
+            cell3.textContent = quantity;
+            cell4.textContent = totalForProduct.toFixed(2);
+        }
+
+        // Update the final total and tax
+        updateFinalTotal(totalForProduct);
+        updateTax(totalForProduct);
+
+        function updateTax(amount) {
+            // Update the tax amount in the HTML
+            var taxAmountElement = document.getElementById('tax-amount');
+            var currentTotal = parseFloat(document.getElementById('final-set-amount').textContent);
+            var newTax = 0.05 * currentTotal;
+
+            taxAmountElement.textContent = newTax.toFixed(2);
+        }
+    }
+
+    function updateFinalTotal(amount) {
+        // Update the final total in the HTML
+        var finalSetAmountElement = document.getElementById('final-set-amount');
+        var currentTotal = parseFloat(finalSetAmountElement.textContent);
+        finalSetAmountElement.textContent = (currentTotal + amount).toFixed(2);
+    }
+
+    // Function to update the cart totals
+    function updateCartTotals() {
+        var basketItemsList = document.getElementById('basket-items');
+        var taxAmountElement = document.getElementById('tax-amount');
+        var finalSetAmountElement = document.getElementById('final-set-amount');
+
+        var totalWithoutTax = 0;
+
+        // Iterate through the cart items and calculate the total without tax
+        for (var i = 0; i < basketItemsList.rows.length; i++) {
+            var totalForProduct = parseFloat(basketItemsList.rows[i].cells[3].textContent);
+            totalWithoutTax += totalForProduct;
+        }
+
+        // Calculate tax (5%)
+        var taxAmount = 0.05 * totalWithoutTax;
+
+        // Update the tax amount
+        taxAmountElement.textContent = taxAmount.toFixed(2);
+
+        // Update the final total
+        finalSetAmountElement.textContent = (totalWithoutTax + taxAmount).toFixed(2);
+    }
+
+    // Function to update the final total and tax when removing items from the cart
+    function updateCartAfterRemoval(amountToRemove) {
+        // Update the final total and tax
+        updateFinalTotal(-amountToRemove);
+        updateTax(-amountToRemove);
+    }
+
+    function cancelCart() {
+        // Clear the shopping cart
+        var basketItemsList = document.getElementById('basket-items');
+        basketItemsList.innerHTML = '';
+
+        // Reset total amounts
+        var finalSetAmountElement = document.getElementById('final-set-amount');
+        var taxAmountElement = document.getElementById('tax-amount');
+        finalSetAmountElement.textContent = '0.00';
+        taxAmountElement.textContent = '0.00';
+    }
+
+    // Function to remove a product from the cart
+    function removeFromCart(row) {
+        var amountToRemove = parseFloat(row.cells[3].textContent);
+
+        // Remove the row from the table
+        row.parentNode.removeChild(row);
+
+        // Update the cart totals after removal
+        updateCartAfterRemoval(amountToRemove);
+    }
+
+    function continueShopping() {
+        // Add your logic for what should happen when the user continues shopping
+        alert('Continue shopping!');
+    }
+    function showCheckoutForm() {
+        // Show the checkout form when the user clicks "Continue"
+        document.getElementById('checkout-form').style.display = 'block';
+    }
+    function validateForm() {
+        // Get form input values
+        var fullName = document.getElementById('fullName').value;
+        var nationalNumber = document.getElementById('nationalNumber').value;
+        var dateOfBirth = document.getElementById('dateOfBirth').value;
+        var mobileNumber = document.getElementById('mobileNumber').value;
+        var email = document.getElementById('email').value;
+        var captcha = document.getElementById('captcha').value;
+
+        // Validate each field
+        if (fullName === '' || !fullName.match(/[أ-يa-zA-Z\s]+/)) {
+            alert('يرجى إدخال اسم صحيح.');
+            return false;
+        }
+
+        if (nationalNumber === '' || !nationalNumber.match(/^\d{11}$/)) {
+            alert('يرجى إدخال رقم وطني صحيح مكون من 11 رقمًا.');
+            return false;
+        }
+
+        if (dateOfBirth === '' || !dateOfBirth.match(/^\d{2}-\d{2}-\d{4}$/)) {
+            alert('يرجى إدخال تاريخ ميلاد صحيح بالصيغة dd-mm-yyyy.');
+            return false;
+        }
+
+        if (mobileNumber === '' || !mobileNumber.match(/^(09\d{8}|09\d{9})$/)) {
+            alert('يرجى إدخال رقم هاتف محمول صحيح.');
+            return false;
+        }
+
+        if (email === '' || !email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+            alert('يرجى إدخال عنوان بريد إلكتروني صحيح.');
+            return false;
+        }
+
+        if (captcha === '') {
+            alert('يرجى إدخال رمز Captcha.');
+            return false;
+        }
+
+        // If all validations pass, return true
+        return true;
+    }
+
+    function buy() {
+        // Validate the form before processing the purchase
+        if (validateForm()) {
+            // Add your logic for processing the purchase, e.g., sending data to a server
+            alert('Purchase successful!');
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    </script>
+
+</body>
+</html>
